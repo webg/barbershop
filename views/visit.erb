@@ -29,17 +29,18 @@ $(function(){
     <label>Когда вас ждать?</label>
     <input id="datetimepicker" name="client[datestamp]" type="text" class="form-control" placeholder="Введите дату и время" value="<%= @c.datestamp %>">
   </div>
-<!-- <div class="form-group">
-  <label>Ваш парикмахер:</label>
-  <select class="form-control" name="barber" value="<%= @barber %>">
-  <option></option>  
-  <% @barbers.each do |item| %>
-          <option <%= @barber == item['name'] ? 'selected' : '' %>><%= item['name'] %></option>
-  <% end %>
+  <div class="form-group">
+    <label>Ваш парикмахер:</label>
+    <select class="form-control" name="barber" value="<%= @barber %>">
+    <option></option>  
+    <% @barbers.each do |item| %>
+            <option <%= @barber == item['name'] ? 'selected' : '' %>><%= item['name'] %></option>
+    <% end %>
 
-</select>
+    </select>
   </div>
- -->
+ 
+
 <div class="form-group">
   <label>Выбор цвета</label>
   <select id="ccc" name="client[color]">
